@@ -1,0 +1,116 @@
+:root {
+  --color-bg: #e5ddd2;
+  --color-red: #eb3d00;
+  --color-white: #fff;
+  --color-orange: #ff7f00;
+  --color-blue: #0185dd;
+  --color-yellow: #fcfb01;
+  --color-grey: #333;
+  --color-magenta: #ff007f;
+  --color-green: #00904c;
+  --color-pink: #ffc0cb;
+}
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+}
+
+.wrapper {
+  display: grid;
+  gap: 32px;
+  padding: 16px;
+  background-color: var(--color-bg);
+  height: calc(44vw);
+
+  /* Два рядки Три стовпці */
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+}
+
+/* ======== */
+.task-1 {
+  display: grid;
+  /* Три стовпці: середній, ширший, середній */
+  grid-template-columns: 1fr 2fr 1fr;
+  /* Три рядки: вузький, ширший, вузький */
+  grid-template-rows: 1fr 5fr 1fr;
+}
+
+/* 1-й рядок */
+.red {
+  background-color: var(--color-red);
+  grid-column: 1;
+}
+.orange {
+  background-color: var(--color-orange);
+  grid-column: 2 / 4; /* стовпці 2-3 */
+}
+
+/* 2-й рядок */
+.blue {
+  background-color: var(--color-blue);
+  /* не вказуємо grid-column бо буде yellow */
+}
+.yellow-wrapper {
+  background-color: var(--color-yellow);
+  color: var(--color-grey);
+  grid-column: 2 / 4; /* стовпці 2-3 у батьківському wrapper*/
+  padding: 8px;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(
+    5,
+    1fr
+  ); /* кожен рядок 1/5 від загального height батьківського wrapper*/
+  align-items: stretch; /* кожен рядок розтягнен на 100% від комірки grid */
+  justify-items: stretch;
+}
+.yellow-title {
+  grid-column: 2;
+  grid-row: 3;
+  color: var(--color-grey);
+}
+.magenta {
+  background-color: var(--color-magenta);
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+/* 3-й рядок */
+.green {
+  background-color: var(--color-green);
+  grid-column: 1 / 3; /* стовпці 1-2 */
+}
+.pink {
+  background-color: var(--color-pink); /* 3-й стовпець */
+  /* не вказуємо grid-column бо був green */
+}
+
+/* ======== */
+.task-2 {
+  display: grid;
+  /* Три стовпці: середній, ширший, середній */
+  grid-template-columns: 1fr 2fr 1fr;
+  /* Три рядки: вузький, ширший, вузький */
+  grid-template-rows: 1fr 5fr 1fr;
+}
+
+/* ======== */
+.task-3 {
+  display: grid;
+  /* Три стовпці: середній, ширший, середній */
+  grid-template-columns: 1fr 2fr 1fr;
+  /* Три рядки: вузький, ширший, вузький */
+  grid-template-rows: 1fr 5fr 1fr;
+}
+
+/* ======== */
+.task-4 {
+  display: grid;
+  /* Три стовпці: середній, ширший, середній */
+  grid-template-columns: 1fr 2fr 1fr;
+  /* Три рядки: вузький, ширший, вузький */
+  grid-template-rows: 1fr 5fr 1fr;
+}
