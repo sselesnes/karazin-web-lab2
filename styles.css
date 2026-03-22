@@ -62,7 +62,7 @@
 }
 .task-1 .yellow-wrapper {
   grid-column: 2 / 4; /* стовпці 2-3 у батьківському wrapper*/
-  padding: 0.4vw;
+  padding: 0.4vh;
 
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -102,8 +102,8 @@
 }
 .task-2 .yellow-wrapper {
   grid-column: 2 / 4;
-  padding: 0.4vw;
-  gap: 0.5vw;
+  padding: 0.4vh;
+  gap: 0.5vh;
   display: grid;
   grid-template-columns: 3.9fr 3.45fr;
   grid-template-rows: repeat(4, 1fr);
@@ -153,8 +153,8 @@
   grid-template-rows: repeat(6, 1fr);
   align-items: stretch;
   justify-items: stretch;
-  padding: 0.4vw;
-  gap: 0.5vw;
+  padding: 0.4vh;
+  gap: 0.5vh;
 }
 .task-3 .blue-wrapper .orange {
   grid-row: 2;
@@ -186,8 +186,8 @@
 }
 .task-4 .yellow-wrapper {
   grid-area: 2/2/3/3; /* start/start/end/end */
-  padding: 0.4vw;
-  gap: 0.5vw;
+  padding: 0.4vh;
+  gap: 0.5vh;
   display: grid;
   grid-template-columns: 4.9fr 2.45fr;
   grid-template-rows: repeat(4, 1fr);
@@ -225,7 +225,7 @@
   grid-area: 1/2 / span 3 / auto;
 }
 .task-5 .yellow-wrapper {
-  padding: 0.4vw;
+  padding: 0.4vh;
   display: grid;
   grid-template-columns: 3fr 2.5fr;
   grid-template-rows: repeat(5, 1fr);
@@ -262,7 +262,7 @@
   grid-area: 3/ 1;
 }
 .task-6 .yellow-wrapper {
-  padding: 0.4vw;
+  padding: 0.4vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
