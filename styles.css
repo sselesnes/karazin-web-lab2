@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
+  min-height: 24px;
 }
 .red {
   background-color: #eb3d00;
@@ -31,8 +32,8 @@
 }
 .wrapper {
   display: grid;
-  gap: 32px;
-  padding: 16px;
+  padding: 1vh;
+  gap: 1.5vh;
   background-color: #e5ddd2;
 
   /* Два рядки Три стовпці */
@@ -108,13 +109,12 @@
   grid-template-columns: 3.9fr 3.45fr;
   grid-template-rows: repeat(4, 1fr);
   align-items: stretch;
-  justify-items: center; /* stretch + z-index fail => solved width 100% */
+  justify-items: stretch;
 }
 .task-2 .yellow-wrapper .magenta,
 .task-2 .yellow-wrapper .grey,
 .task-2 .yellow-wrapper .orange {
   grid-column: 2/3;
-  width: 100%;
 }
 .task-2 .yellow-wrapper .magenta {
   z-index: 2;
@@ -126,7 +126,6 @@
   grid-row: 2;
   top: -50%;
   left: -20%;
-  height: 100%;
 }
 .task-2 .yellow-wrapper .orange {
   z-index: 4;
@@ -192,21 +191,18 @@
   grid-template-columns: 4.9fr 2.45fr;
   grid-template-rows: repeat(4, 1fr);
   align-items: stretch;
-  justify-items: center;
+  justify-items: stretch;
 }
 .task-4 .yellow-wrapper .orange {
   position: relative;
   z-index: 2;
   grid-area: 4/2;
-  width: 100%;
   top: -64%;
   left: -50%;
-  height: 100%;
 }
 .task-4 .yellow-wrapper .magenta {
   z-index: 3;
   grid-area: 4/2; /* start/start*/
-  width: 100%;
 }
 .task-4 .yellow-wrapper .yellow-title {
   grid-area: 2 / 1 / auto / span 2; /* span - розтягуємо на дві комірки */
@@ -230,11 +226,10 @@
   grid-template-columns: 3fr 2.5fr;
   grid-template-rows: repeat(5, 1fr);
   align-items: stretch;
-  justify-items: center;
+  justify-items: stretch;
 }
 .task-5 .yellow-wrapper .magenta {
   grid-area: 4/1;
-  width: 100%;
 }
 .task-5 .yellow-wrapper .grey {
   position: relative;
@@ -242,8 +237,6 @@
   grid-area: 5/1;
   top: -30%;
   left: 30%;
-  width: 100%;
-  height: 100%;
 }
 .task-5 .yellow-wrapper .yellow-title {
   grid-area: 2 / 1 / auto / span 2;
@@ -267,12 +260,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   align-items: stretch;
-  justify-items: center;
-}
-.task-6 .yellow-wrapper .orange,
-.task-6 .yellow-wrapper .magenta,
-.task-6 .yellow-wrapper .grey {
-  width: 100%;
+  justify-items: stretch;
 }
 .task-6 .yellow-wrapper .orange {
   grid-area: 1/1;
@@ -283,14 +271,13 @@
   grid-area: 2/1;
   top: -30%;
   left: 50%;
-  height: 100%;
 }
 .task-6 .yellow-wrapper .grey {
+  position: relative;
   z-index: 3;
   grid-area: 2/2;
-  margin-top: 1cqh;
-  margin-right: -3cqw;
-  height: 100%;
+  top: 30%;
+  left: 30%;
 }
 .task-6 .yellow-wrapper .yellow-title {
   grid-area: 4/ 2;
