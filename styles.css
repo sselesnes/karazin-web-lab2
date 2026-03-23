@@ -270,14 +270,14 @@
   z-index: 2;
   grid-area: 2/1;
   top: -30%;
-  left: 50%;
+  left: 60%;
 }
 .task-6 .yellow-wrapper .grey {
   position: relative;
   z-index: 3;
-  grid-area: 2/2;
+  grid-area: 2/1;
   top: 30%;
-  left: 30%;
+  left: 120%;
 }
 .task-6 .yellow-wrapper .yellow-title {
   grid-area: 4/ 2;
